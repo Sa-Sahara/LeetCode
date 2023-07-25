@@ -3,7 +3,7 @@ package summary_ranges;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SummaryRanges {
+public class Solution2 {
     public List<String> summaryRanges(int[] nums) {
         List<String> result = new ArrayList<>();
 
@@ -13,30 +13,28 @@ public class SummaryRanges {
             return result;
         }
 
-        StringBuilder sb = new StringBuilder();
         int indexPrev = 0;
         long prev = nums[0];
 
         for (int i = 0; i < nums.length; i++) {
-            if (i == 0) {
-                sb.append(nums[i]);
-                continue;
-            }
 
             if ((nums[i] - prev) > (i - indexPrev)) {
                 if (i - indexPrev != 1) {
-                    sb.append("->").append(nums[i - 1]);
+                    result.add(prev + "->" + nums[i - 1]);
+                } else {
+                    result.add("" + nums[i - 1]);
                 }
-                result.add(sb.toString());
-                sb.setLength(0);
-                sb.append(nums[i]);
+
+                if (i == nums.length - 1) {
+                    result.add("" + nums[i]);
+                    continue;
+                }
+
                 prev = nums[i];
                 indexPrev = i;
+
             } else if (i == nums.length - 1) {
-                sb.append("->").append(nums[i]);
-            }
-            if (i == nums.length - 1) {
-                result.add(sb.toString());
+                result.add(prev + "->" + nums[i]);
             }
         }
         return result;
