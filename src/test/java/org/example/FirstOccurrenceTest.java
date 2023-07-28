@@ -40,10 +40,18 @@ public class FirstOccurrenceTest {
     }
 
     @Test
-    public void Test5(){
+    public void Test6(){
 //        Input: haystack = "mississippi", needle = "issip"
 //        Output: 0
 
         Assert.assertEquals(4, f.strStr("mississippi", "issip"));
+    }
+
+    @Test
+    public void Test7(){
+//        Input: haystack = "aabaaabaaac", needle = "aabaaac"
+//        Output: 0
+
+        Assert.assertEquals(4, f.strStr("aabaaabaaac", "aabaaac"));
     }
 }

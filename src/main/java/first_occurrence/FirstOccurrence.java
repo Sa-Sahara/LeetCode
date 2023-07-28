@@ -4,16 +4,18 @@ public class FirstOccurrence {
     public int strStr(String haystack, String needle) {
         if (haystack.length() < needle.length()) return -1;
 
-        for (int i = 0, j = 0; i < haystack.length(); i++) {
+        for (int i = 0; i <= haystack.length() - needle.length(); i++) {
             if (haystack.charAt(i) == needle.charAt(0)) {
-                while (j < needle.length() && i < haystack.length()) {
-                    if (haystack.charAt(i) != needle.charAt(j)) {
-                        j = 0;
+                int tmpI = i;
+                int j = 0;
+                while (tmpI < haystack.length()) {
+                    if (haystack.charAt(tmpI) != needle.charAt(j)) {
+                        break;
                     } else {
                         ++j;
-                        ++i;
+                        ++tmpI;
                         if (j == needle.length()) {
-                            return i - needle.length();
+                            return tmpI - needle.length();
                         }
                     }
                 }
