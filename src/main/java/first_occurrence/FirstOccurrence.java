@@ -6,8 +6,6 @@ public class FirstOccurrence {
 
         for (int i = 0, j = 0; i < haystack.length(); i++) {
             if (haystack.charAt(i) == needle.charAt(0)) {
-//                i++;
-//                j++;
                 while (j < needle.length() && i < haystack.length()) {
                     if (haystack.charAt(i) != needle.charAt(j)) {
                         j = 0;
