@@ -1,6 +1,6 @@
 package org.example;
 
-import integer_to_roman.IntegerToRoman;
+import array_string.integer_to_roman.IntegerToRoman;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -2,7 +2,7 @@ package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
-import sell_stock.OptimalSellStock;
+import array_string.sell_stock.OptimalSellStock;
 
 public class OptimalSellStockTest {
     OptimalSellStock o = new OptimalSellStock();

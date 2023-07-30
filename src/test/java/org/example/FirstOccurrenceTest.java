@@ -1,6 +1,6 @@
 package org.example;
 
-import first_occurrence.FirstOccurrence;
+import array_string.first_occurrence.FirstOccurrence;
 import org.junit.Assert;
 import org.junit.Test;
 

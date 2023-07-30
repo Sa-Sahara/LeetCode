@@ -1,6 +1,6 @@
 package org.example;
 
-import length_of_last_word.LengthLastWord;
+import array_string.length_of_last_word.LengthLastWord;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -2,7 +2,7 @@ package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
-import parentheses.ValidParentheses;
+import stack.parentheses.ValidParentheses;
 
 public class ValidParenthesesTest {
     ValidParentheses v = new ValidParentheses();

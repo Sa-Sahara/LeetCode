@@ -2,7 +2,7 @@ package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
-import sell_stock.BruteForceSellStock;
+import array_string.sell_stock.BruteForceSellStock;
 
 public class BruteForceSellStockTest {
     BruteForceSellStock s = new BruteForceSellStock();

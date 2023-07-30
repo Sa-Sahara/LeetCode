@@ -2,7 +2,7 @@ package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
-import path.SimplifyPath;
+import stack.path.SimplifyPath;
 
 public class SimplifyPathTest {
     SimplifyPath s = new SimplifyPath();

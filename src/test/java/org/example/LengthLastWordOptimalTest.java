@@ -1,7 +1,6 @@
 package org.example;
 
-import length_of_last_word.LengthLastWord;
-import length_of_last_word.LengthLastWordOptimal;
+import array_string.length_of_last_word.LengthLastWordOptimal;
 import org.junit.Assert;
 import org.junit.Test;
 

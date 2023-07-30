@@ -2,7 +2,7 @@ package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
-import two_sum.TwoSum;
+import hashmap.two_sum.TwoSum;
 
 public class TwoSumTest {
     TwoSum t = new TwoSum();
