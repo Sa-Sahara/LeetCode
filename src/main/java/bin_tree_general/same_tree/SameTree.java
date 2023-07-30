@@ -1,4 +1,6 @@
-package bin_tree_general;
+package bin_tree_general.same_tree;
+
+import bin_tree_general.TreeNode;
 
 public class SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {

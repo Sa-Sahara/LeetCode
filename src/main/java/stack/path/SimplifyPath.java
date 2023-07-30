@@ -4,44 +4,21 @@ import java.util.Stack;
 
 public class SimplifyPath {
     public String simplifyPath(String path) {
-        StringBuilder builder = new StringBuilder();
-        Stack<Character> stack = new Stack<>();
-        boolean flag = false;
+        String[] strs = path.trim().split("/");
+        Stack<String> stack = new Stack<>();
 
-        for (int i = path.length() - 1; i >= 0; i--) {
-            while (!flag) {
-                if (path.charAt(i) != '/' && path.charAt(i) != '.') {
-                    flag = true;
-                } else {
-                    --i;
-                    if (i == -1) break;
-                }
-            }
-            if (i == -1) return "/";
-
-            if (path.charAt(i) == '.') {
-                break;
-            }
-
-            if (path.charAt(i) == '/') {
-                if (i == 0) {
-                    stack.push('/');
-                } else if (path.charAt(i - 1) != '/') {
-                    stack.push('/');
+        for (String str : strs) {
+            if (str.equals(".") || str.isEmpty()) {
+                continue;
+            } else if (str.equals("..")) {
+                if (!stack.isEmpty()) {
+                    stack.pop();
                 }
             } else {
-                stack.push(path.charAt(i));
+                stack.push(str);
             }
         }
 
-        while (!stack.isEmpty()) {
-            builder.append(stack.pop());
-        }
-
-        if (builder.isEmpty()) {
-            builder.append('/');
-        }
-
-        return builder.toString();
+        return "/" + String.join("/", stack);
     }
 }
