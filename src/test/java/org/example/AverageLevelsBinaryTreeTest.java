@@ -1,6 +1,6 @@
 package org.example;
 
-import array_string.BFS_tree.AverageLevelsBinaryTree;
+import BFS_tree.AverageLevelsBinaryTree;
 import bin_tree_general.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;

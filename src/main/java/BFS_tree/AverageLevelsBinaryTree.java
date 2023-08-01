@@ -1,4 +1,4 @@
-package array_string.BFS_tree;
+package BFS_tree;
 
 import bin_tree_general.TreeNode;
 
