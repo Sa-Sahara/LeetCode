@@ -1,4 +1,4 @@
-package math;
+package math.palindrome;
 
 public class PalindromeNumber {
     public boolean isPalindrome(int x) {

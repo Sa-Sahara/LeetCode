@@ -1,6 +1,6 @@
 package org.example;
 
-import math.PalindromeNumber;
+import math.palindrome.PalindromeNumber;
 import org.junit.Assert;
 import org.junit.Test;
 
