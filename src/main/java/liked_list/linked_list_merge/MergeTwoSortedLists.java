@@ -1,6 +1,6 @@
-package liked_list.cycle.linked_list_merge;
+package liked_list.linked_list_merge;
 
-import liked_list.cycle.ListNode;
+import liked_list.ListNode;
 
 /**
  * Definition for singly-linked list.

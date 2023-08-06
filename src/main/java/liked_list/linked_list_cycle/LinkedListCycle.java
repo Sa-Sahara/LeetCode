@@ -1,6 +1,6 @@
-package liked_list.cycle.linked_list_cycle;
+package liked_list.linked_list_cycle;
 
-import liked_list.cycle.ListNode;
+import liked_list.ListNode;
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {

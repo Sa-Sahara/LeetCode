@@ -1,4 +1,4 @@
-package liked_list.cycle;
+package liked_list;
 
 public class ListNode {
     public int val;
