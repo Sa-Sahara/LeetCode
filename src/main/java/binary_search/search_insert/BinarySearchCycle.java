@@ -1,4 +1,4 @@
-package binary_search;
+package binary_search.search_insert;
 
 public class BinarySearchCycle {
     public int searchInsert(int[] nums, int target) {

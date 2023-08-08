@@ -1,7 +1,6 @@
 package org.example;
 
-import binary_search.BinarySearchCycle;
-import binary_search.BinarySearchRecursion;
+import binary_search.search_insert.BinarySearchCycle;
 import org.junit.Assert;
 import org.junit.Test;
 

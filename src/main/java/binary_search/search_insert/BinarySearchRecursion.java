@@ -1,4 +1,4 @@
-package binary_search;
+package binary_search.search_insert;
 
 public class BinarySearchRecursion {
     public int searchInsert(int[] nums, int target) {
