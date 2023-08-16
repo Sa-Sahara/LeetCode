@@ -8,6 +8,7 @@ public class JumpGameII {
             if(i == currEnd) {
                 currEnd = currFarthest;
                 jumps ++;
+                if (currFarthest >= nums.length - 1) break;
             }
         }
         return jumps;
