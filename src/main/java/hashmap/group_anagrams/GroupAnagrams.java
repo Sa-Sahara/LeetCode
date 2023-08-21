@@ -1,4 +1,4 @@
-package hashmap;
+package hashmap.group_anagrams;
 
 import java.util.ArrayList;
 import java.util.Arrays;

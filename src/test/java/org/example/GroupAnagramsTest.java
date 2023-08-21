@@ -1,10 +1,11 @@
 package org.example;
 
-import hashmap.GroupAnagrams;
+import hashmap.group_anagrams.GroupAnagrams;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class GroupAnagramsTest {
@@ -30,11 +31,4 @@ public class GroupAnagramsTest {
 
         System.out.println(ate.equals(eat));
     }
-
-//    @Test
-//    public void test3() {
-//        char[] test = "".toCharArray();
-//
-//        Assert.assertEquals(test[0] == '');
-//    }
 }
