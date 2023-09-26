@@ -1,7 +1,7 @@
 package org.example;
 
 import bin_tree_general.TreeNode;
-import binary_search_tree.MinimumAbsDiff;
+import binary_search_tree.min_abs_diff.MinimumAbsDiff;
 import org.junit.Assert;
 import org.junit.Test;
 

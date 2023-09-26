@@ -1,4 +1,4 @@
-package binary_search_tree;
+package binary_search_tree.min_abs_diff;
 
 import bin_tree_general.TreeNode;
 

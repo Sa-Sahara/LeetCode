@@ -1,8 +1,11 @@
 package BFS_tree;
 
+import bin_tree_general.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class LevelOrderTraversal {
     Queue<TreeNode> q = new LinkedList<>();
@@ -23,7 +26,7 @@ public class LevelOrderTraversal {
                     q.offer(node.left);
                 }
                 if (node.right != null) {
-                    q.offer(node.left);
+                    q.offer(node.right);
                 }
                 tmp.add(node.val);
             }
